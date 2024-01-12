@@ -4,446 +4,522 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" /> -->
+        <link
+            rel="icon"
+            href="/assets/images/favicon.ico"
+            type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&display=swap" />
+        <link rel="stylesheet" href="libs/aos.css" />
         <link rel="stylesheet" href="libs/bootstrap.css" />
         <link rel="stylesheet" href="assets/css/normalize.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
+
         <title>Mega</title>
     </head>
     <body>
-        <nav class="header">
-            <div class="logo">
-                <a href="/">
-                    <img src="assets/images/logo.png" width="120" alt="logo" />
-                </a>
-            </div>
-            <ul class="nav-links">
-                <div>
-                    <li class="nav-link">
-                        <a href="#main">الرئيسية</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#about-us">نبذة عنا</a>
-                    </li>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img
+                            src="assets/images/logo.png"
+                            width="120"
+                            alt="logo" />
+                    </a>
                 </div>
-                <div>
-                    <li class="nav-link">
-                        <a href="#clients">عملائنا</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#book-now">التواصل</a>
-                    </li>
-                </div>
-            </ul>
-        </nav>
-        <div class="main" id="main">
-            <div class="container">
-                <div class="mega-menu">
-                    <h3 class="from-right">
-                        بيتك قيد <br />
-                        <span
-                            >الانشـــــــــــــــــــــــــــــــــــاء ؟</span
-                        >
-                    </h3>
-                    <div class="images">
-                        <img src="/assets/images/house.png" alt="house" />
-                        <button
-                            class="button pop-up-btn"
-                            onclick="{togglePopup()}">
-                            <svg
-                                viewBox="0 0 448 512"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                width="26px">
-                                <path
-                                    d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </button>
-                        <div class="watch-now-box">
-                            <span class="watch-now">
-                                <br />
-                            </span>
-                            <!-- Add this HTML for the responsive image button -->
-                            <div class="responsive-button">
-                                <a href="#your-link">
-                                    <img
-                                        src="/assets/images/bill.png"
-                                        alt="Your Image Alt Text" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="pop-up">
-                            <!-- put your video link here below -->
-                            <iframe
-                                width="1280"
-                                height="746"
-                                src="https://www.youtube.com/embed/YPVshZN9jPs"
-                                title="6 انظمة بـ 6 ريال فقط...لايفوتك اقوى عرض لدى العملاق 2024"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <div class="overlay" onclick="{togglePopup()}">
-                                <i class="ri-close-line"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p>6 نظمة لبيتك بــ</p>
-                    <img
-                        src="/assets/images/mega-price3.png"
-                        alt=""
-                        class="from-bottom" />
-                </div>
-                <div class="booking from-top">
-                    <a href="#book-now">احجز زيارة مجانية لبيتك لان</a>
-                </div>
-                <div class="questions-box" id="about-us">
-                    <ul class="questions from-right">
-                        <li>
-                            <span>اكيد</span>سألت ليش الكاميرات في المحلات
-                            تظهر<br />
-                            بجودة عالية بينما اللي مركبها خويك جودتها سيئة ؟
+                <ul class="nav-links m-0">
+                    <div>
+                        <li class="nav-link">
+                            <a href="#main">الرئيسية</a>
                         </li>
-                        <li>خايف كاميراتك ماتلقط لوحات السيارات ؟</li>
-                        <li>حرامي يسرق الكاميرات او يكسرها ؟</li>
-                        <li>يشب حريق و انت مو موجود بالبيت ؟</li>
-                        <li>جرس الباب ما يلقط الزوار او يظهرهم ؟</li>
-                        <li>تبي تدلع و تتحكم في كل بيتك من جوالك ؟</li>
-                    </ul>
-                    <div class="image from-left">
-                        <img src="/assets/images/interogation.png" alt="?" />
+                        <li class="nav-link">
+                            <a href="#about-us">نبذة عنا</a>
+                        </li>
                     </div>
-                </div>
-                <div class="services">
-                    <h3>الأسئلة كثيرة في بالك و الجواب واحد</h3>
-                    <h1>العملاق</h1>
-                    <h3>
-                        يوفر لك مهندسين للاشراف على بيتك على جميع الانظمة حتى
-                        تسليم المفتاح
-                    </h3>
-                    <div class="services-box">
-                        <div class="service from-right">
-                            <div class="image">
-                                <img
-                                    src="/assets/images/sound.png"
-                                    alt="smart-house" />
-                            </div>
-                            <p>صوتيات</p>
-                        </div>
-                        <div class="service from-top">
-                            <div class="image">
-                                <img
-                                    src="/assets/images/intercam.png"
-                                    alt="smart-house" />
-                            </div>
-                            <p>انتركم</p>
-                        </div>
-                        <div class="service from-left">
-                            <div class="image">
-                                <img
-                                    src="/assets/images//smart-house.png"
-                                    alt="smart-house" />
-                            </div>
-                            <p>بيوت ذكية</p>
-                        </div>
-                        <div class="service from-right">
-                            <div class="image">
-                                <img
-                                    src="/assets/images/centrals.png"
-                                    alt="smart-house" />
-                            </div>
-                            <p>سنترالات</p>
-                        </div>
-                        <div class="service from-bottom">
-                            <div class="image">
-                                <img
-                                    src="/assets/images/securety.png"
-                                    alt="smart-house" />
-                            </div>
-                            <p>اجهزة امنية</p>
-                        </div>
-                        <div class="service from-left">
-                            <div class="image">
-                                <img
-                                    src="/assets/images/wifi.png"
-                                    alt="smart-house" />
-                            </div>
-                            <p>انترنت</p>
-                        </div>
+                    <div>
+                        <li class="nav-link">
+                            <a href="#clients">عملائنا</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#contact_us">التواصل</a>
+                        </li>
                     </div>
-                    <div class="free-box">
-                        <img
-                            class="free-img"
-                            src="/assets/images/free.png"
-                            alt="free" />
-                        <h3>مانت خسران شيئ</h3>
-                        <a href="#book-now"> احجز زيارة مجانية الان</a>
-                    </div>
-                </div>
-                <div class="warranty">
-                    <h3>افضل العروض مع الضمان الذهبي</h3>
-                    <div class="descr">
-                        <p class="from-right">
-                            يضمن لك العملاق ضمان سعر بحيث لو وجدت اسعار أقل لنفس
-                            العروض او الخدمات المقدمةة بسعر اقل و بنفس الجودة
-                            تحصل على فارق السعر
-                        </p>
-                        <img
-                            src="/assets/images/warranty.png"
-                            alt="warranty"
-                            class="from-left" />
-                    </div>
-                </div>
-                <div class="why-us">
-                    <h3>لماذا نحن ؟</h3>
-                    <div class="box">
-                        <div class="child-box from-right">
-                            <img
-                                src="/assets/images/customer-support.png"
-                                alt="customer-support" />
-                            <div class="descr">
-                                <p>نهتم</p>
-                                <br />
-                                <span>بعملائنا</span>
-                            </div>
-                        </div>
-                        <div class="child-box from-right">
-                            <img
-                                src="/assets/images/guarantee.png"
-                                alt="customer-support" />
-                            <div class="descr">
-                                <p>ضمان</p>
-                                <br />
-                                <span>جودة</span>
-                            </div>
-                        </div>
-                        <div class="child-box from-left">
-                            <img
-                                src="/assets/images/price-tag.png"
-                                alt="customer-support" />
-                            <div class="descr">
-                                <p>ضمان</p>
-                                <br />
-                                <span>سعر</span>
-                            </div>
-                        </div>
-                        <div class="child-box from-left">
-                            <img
-                                src="/assets/images/support.png"
-                                alt="customer-support" />
-                            <div class="descr">
-                                <p>عقد صيانة</p>
-                                <br />
-                                <span>مجاني</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="book-now" id="book-now">
-                    <h3>اغتنم الفرصة و</h3>
-                    <img
-                        src="/assets/images/book-now.png"
-                        alt="book-now"
-                        class="book-now-img" />
-                    <!--  =======================================================================
-    
-                    This is a working contact form. To receive email,
-                    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
-    
-                    Create Access Key here 👉 https://web3forms.com/
-    
-                    =======================================================================  -->
-
-                    <form
-                        action="https://api.web3forms.com/submit"
-                        method="POST"
-                        id="form">
-                        <input
-                            type="hidden"
-                            name="access_key"
-                            value="1f996074-19dc-4d22-90be-301b676f7568" />
-                        <input
-                            type="hidden"
-                            name="subject"
-                            value="حجز موعد جديد" />
-                        <input
-                            type="checkbox"
-                            name="botcheck"
-                            id=""
-                            style="display: none" />
-                        <div class="box">
-                            <label for="الاسم"
-                                ><img src="/assets/images/user.png" alt="icon"
-                            /></label>
-                            <input
-                                type="text"
-                                name="الاسم"
-                                id="name"
-                                placeholder="الاسم الكامل"
-                                required
-                                class="" />
-                        </div>
-                        <div class="box">
-                            <label for="الاسم"
-                                ><img src="/assets/images/user.png" alt="icon"
-                            /></label>
-                            <input
-                                type="text"
-                                name="رقم الجوال"
-                                id="phone"
-                                placeholder="05XXXXXXXX"
-                                required
-                                class="" />
-                        </div>
-                        <div class="box">
-                            <label for="موقع البيت"
-                                ><img src="/assets/images/home.png" alt="icon"
-                            /></label>
-                            <input
-                                type="text"
-                                name="موقع البيت"
-                                id="house"
-                                placeholder="موقع البيت"
-                                required
-                                class="" />
-                        </div>
-                        <div class="box">
-                            <label for="المرحلة"
-                                ><img
-                                    src="/assets/images/sketch.png"
-                                    alt="icon"
-                            /></label>
-                            <input
-                                type="text"
-                                name="المرحلة"
-                                id="stage"
-                                placeholder="في اي مرحلة البيت ؟"
-                                required
-                                class="" />
-                        </div>
-                        <div class="box">
-                            <label for="العرض"
-                                ><img
-                                    src="/assets/images/discount.png"
-                                    alt="icon"
-                            /></label>
-                            <input
-                                type="text"
-                                name="العرض"
-                                id="offer"
-                                placeholder="اي عرض مهتم ؟"
-                                required
-                                class="" />
-                        </div>
-                        <div>
-                            <button type="submit" class="book-now-end">
-                                احجز استكانة شاي الان
-                            </button>
-                        </div>
-                        <p class="" id="result"></p>
-                    </form>
-
-                    <div class="clients" id="clients">
-                        <h3>عملائنا</h3>
-                        <div class="clients-box">
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/1.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/2.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/3.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/4.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/5.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/6.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/7.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/8.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                            <div class="client">
-                                <div class="image">
-                                    <img
-                                        src="/assets/images/9.png"
-                                        alt="smart-house" />
-                                </div>
-                            </div>
-                        </div>
-                        <p>باكثر من <span>20,000</span> مشروع منجز</p>
-                    </div>
-                    <div class="about-us">
-                        <h3>من نحن ؟</h3>
-                        <p>
-                            شركة سعودية متخصصة في توفير جميع الحلول الامنية
-                            للحماية... بداية من كاميرات المراقبة الى اجهزة
-                            الانذار و كشف الدخان و الحريق حتى انظمة البيوت
-                            الذكية
-                        </p>
-                    </div>
-                    <div class="contact" id="contact">
-                        <h3>للتواصل معنا</h3>
-                        <p>للحجز و الاستفسارات يرجى التواصل واتساب على الرقم</p>
-                        <span>9200 299 10</span>
-                        <p>او من خلال الايقونة</p>
-                        <a
-                            href="https://wa.me/966530950961?text=I%20need%20help"
-                            target="_blank">
-                            <img
-                                src="/assets/images/whatsapp.png"
-                                alt="whatsapp" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+                </ul>
+            </header>
         </div>
+        <main class="main" id="main">
+            <div class="container">
+                <section class="hero">
+                    <div class="hero_head">
+                        <h2>بيتك قيد</h2>
+                        <h1>
+                            <span>
+                                الانشــــــــــــــــــــــــــــــــــــــــــاء
+                                ؟
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="hero_body">
+                        <div
+                            class="first position-relative"
+                            data-aos="fade-left">
+                            <iframe
+                                width="600"
+                                src="https://www.youtube.com/embed/YPVshZN9jPs"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="position-relative" data-aos="fade-right">
+                            <img
+                                class="position-absolute garenty"
+                                src="assets/images/warranty.png"
+                                width="100"
+                                alt="" />
+                            <img
+                                src="assets/images/house.png"
+                                width="1000"
+                                alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section class="book overflow-hidden">
+                    <h2
+                        class="header_section"
+                        data-aos="fade-down"
+                        data-aos="zoom-in">
+                        مو جالس تحلم ترى صحيح ... 6 انظمة ب 6 ريال فقط
+                    </h2>
+                    <button class="book_btn" data-aos="flip-right">
+                        احجز زيارة لبيتك الان
+                    </button>
+                    <h1 data-aos="fade-down">6 انظمة</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="systems row mt-4 pt-2">
+                                <div class="col-6">
+                                    <div
+                                        class="mx-2 my-4 position-relative"
+                                        data-aos="flip-left">
+                                        <div class="position-relative">
+                                            <img
+                                                src="assets/images/sound.png"
+                                                width="100"
+                                                alt="" />
+                                        </div>
+                                        <p>صوتيــات</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div
+                                        class="mx-2 my-4 position-relative"
+                                        data-aos="flip-right">
+                                        <div class="position-relative">
+                                            <img
+                                                src="assets/images/intercam.png"
+                                                width="100"
+                                                alt="" />
+                                        </div>
+
+                                        <p>انتركـــم</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div
+                                        class="mx-2 my-4 position-relative"
+                                        data-aos="flip-left">
+                                        <div class="position-relative">
+                                            <img
+                                                src="assets/images/centrals.png"
+                                                width="100"
+                                                alt="" />
+                                        </div>
+
+                                        <p>سنترلات</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div
+                                        class="mx-2 my-4 position-relative"
+                                        data-aos="flip-right">
+                                        <div class="position-relative">
+                                            <img
+                                                src="assets/images/securety.png"
+                                                width="100"
+                                                alt="" />
+                                        </div>
+
+                                        <p>اجهزة حماية</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div
+                                        class="mx-2 my-4 position-relative"
+                                        data-aos="flip-right">
+                                        <div class="position-relative">
+                                            <img
+                                                src="assets/images/smart-house.png"
+                                                width="100"
+                                                alt="" />
+                                        </div>
+                                        <p>بيوت ذكية</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div
+                                        class="mx-2 my-4 position-relative"
+                                        data-aos="flip-left">
+                                        <div class="position-relative">
+                                            <img
+                                                src="assets/images/wifi.png"
+                                                width="100"
+                                                alt="" />
+                                        </div>
+                                        <p>انترنــت</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 bill" data-aos="fade-up-right">
+                            <img
+                                src="assets/images/bill.png"
+                                width="420"
+                                alt="" />
+                        </div>
+                    </div>
+                    <h2 class="seconde_head" data-aos="zoom-out-up">
+                        مانت خسران شيئ
+                    </h2>
+                    <button class="book_btn seconde" data-aos="zoom-out-down">
+                        احجز زيـارة مجانية
+                    </button>
+                </section>
+                <section class="offer overflow-hidden">
+                    <h2 class="header_section" data-aos="fade-down">
+                        افضل العروض مع الضمان الذهبي
+                    </h2>
+                    <div class="offer_box row">
+                        <div
+                            class="col-lg-6 d-flex align-items-center"
+                            data-aos="fade-up-left">
+                            <p class="offer_desc">
+                                يضمن لك العملاق ضمان سعر بحيث لو وجدت اسعار أقل
+                                لنفس العروض او الخدمات المقدمة بسعر اقل و بنفس
+                                الجودة تحصل على فارق السعر
+                            </p>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-up-right">
+                            <img
+                                src="assets/images/warranty.png"
+                                width="220"
+                                alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section class="why_us overflow-hidden">
+                    <h2 class="header_section" data-aos="fade-down">
+                        لماذا نحن ؟
+                    </h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    class="d-flex align-items-center justify-content-center flex-column re">
+                                    <div class="img">
+                                        <img
+                                            src="assets/images/customer-support.png"
+                                            width="80"
+                                            alt="" />
+                                    </div>
+                                    <h3 class="mt-4 pt-4">
+                                        نهتم <span>بعملائنا</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    class="d-flex align-items-center justify-content-center flex-column">
+                                    <div class="img">
+                                        <img
+                                            src="assets/images/guarantee.png"
+                                            width="80"
+                                            alt="" />
+                                    </div>
+                                    <h3 class="mt-4 pt-4">
+                                        ضمان <span>جودة</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    class="d-flex align-items-center justify-content-center flex-column">
+                                    <div class="img">
+                                        <img
+                                            src="assets/images/price-tag.png"
+                                            width="80"
+                                            alt="" />
+                                    </div>
+                                    <h3 class="mt-4 pt-4">
+                                        ضمان <span>سعر</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    class="d-flex align-items-center justify-content-center flex-column">
+                                    <div class="img">
+                                        <img
+                                            src="assets/images/support.png"
+                                            width="80"
+                                            alt="" />
+                                    </div>
+                                    <h3 class="mt-4 pt-4">
+                                        عقد صيانة <span>مجاني</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="book_now overflow-hidden">
+                    <h3>اغتنم الفرصة و</h3>
+                    <div data-aos="zoom-in">
+                        <img src="assets/images/book-now.png" alt="" />
+                    </div>
+                    <div class="my-4">
+                        <img
+                            src="assets/images/down-filled-triangular-arrow.png"
+                            alt=""
+                            width="50" />
+                    </div>
+                    <div class="img">
+                        <img
+                            src="assets/images/whatsapp.png"
+                            width="64"
+                            alt="" />
+                    </div>
+                </section>
+                <section class="clients overflow-hidden" id="clients">
+                    <h2 class="header_section" data-aos="fade-down">عملائنا</h2>
+                    <div class="clients_box">
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/1.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-right"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/2.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/3.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-right"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/4.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/5.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-right"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/6.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/7.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-right"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/8.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000"
+                                class="d-flex align-items-center justify-content-center">
+                                <img
+                                    src="assets/images/9.png"
+                                    width="120"
+                                    alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="more">
+                        باكثر من <span id="project">20,000</span> مشروع ناجح
+                    </h3>
+                </section>
+                <section class="about_us overflow-hidden" id="about-us">
+                    <h2 class="header_section" data-aos="fade-down">
+                        من نحن ؟
+                    </h2>
+                    <p data-aos="zoom-out">
+                        شركة سعودية متخصصة في توفير جميع الحلول الامنية
+                        للحماية... بداية من كاميرات المراقبة الى اجهزة الانذار و
+                        كشف الدخان و الحريق حتى انظمة البيوت الذكية
+                    </p>
+                </section>
+                <section class="contact_us overflow-hidden" id="contact_us">
+                    <h2 class="header_section" data-aos="fade-down">
+                        تواصل معنا
+                    </h2>
+                    <form class="col-8 mx-auto">
+                        <div
+                            class="d-flex align-items-center justify-content-center">
+                            <div class="mb-3 w-50 ms-2">
+                                <label for="name" class="form-label"
+                                    >الاسم الكامل</label
+                                >
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="أدخل إسمك " />
+                            </div>
+                            <div class="mb-3 w-50">
+                                <label for="tel" class="form-label"
+                                    >رقم الهاتف</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="tel"
+                                    placeholder="أدخل رقم الهاتف" />
+                            </div>
+                        </div>
+                        <div class="mb-3 ms-2">
+                            <label for="name" class="form-label">
+                                موقع البيت</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="أدخل موقع البيت " />
+                        </div>
+                        <div class="mb-3 ms-2">
+                            <label for="name" class="form-label">
+                                في اي مرحلة البيت ؟</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="أدخل  المرحلة " />
+                        </div>
+                        <div class="mb-3">
+                            <label for="letter" class="form-label"
+                                >اي عرض مهتم ؟</label
+                            >
+                            <textarea
+                                class="form-control"
+                                placeholder="أكتب العرض"
+                                id="letter"
+                                rows="4"></textarea>
+                        </div>
+
+                        <button class="btn btn-lg" type="submit">أرسل</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>جميع الحقوق محفوظة <span class="year"></span></footer>
     </body>
+    <script src="libs/aos.js"></script>
     <script src="libs/bootstrap.js"></script>
     <script src="assets/script.js"></script>
 </html>
