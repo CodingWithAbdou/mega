@@ -95,9 +95,12 @@
                         data-aos="zoom-in">
                         مو جالس تحلم ترى صحيح ... 6 انظمة ب 6 ريال فقط
                     </h2>
-                    <button class="book_btn" data-aos="flip-right">
+                    <a
+                        href="#contact_us"
+                        class="book_btn"
+                        data-aos="flip-right">
                         احجز زيارة لبيتك الان
-                    </button>
+                    </a>
                     <h1 data-aos="fade-down">6 انظمة</h1>
                     <div class="row">
                         <div class="col-md-6">
@@ -196,9 +199,9 @@
                         مانت خسران شيئ
                     </h2>
                     <div class="text-center" data-aos="zoom-out-down">
-                        <button class="book_btn seconde">
+                        <a href="#contact_us" class="book_btn seconde">
                             احجز زيـارة مجانية
-                        </button>
+                        </a>
                     </div>
                 </section>
                 <section class="offer overflow-hidden">
@@ -314,10 +317,12 @@
                             width="50" />
                     </div>
                     <div class="img">
-                        <img
-                            src="assets/images/whatsapp.png"
-                            width="64"
-                            alt="" />
+                        <a href="https://wa.me/966920029910">
+                            <img
+                                src="assets/images/whatsapp.png"
+                                width="64"
+                                alt="" />
+                        </a>
                     </div>
                 </section>
                 <section class="clients overflow-hidden" id="clients">
@@ -451,7 +456,14 @@
                     <h2 class="header_section" data-aos="fade-down">
                         تواصل معنا
                     </h2>
-                    <form class="col-lg-10 mx-auto">
+                    <form
+                        class="col-lg-10 mx-auto"
+                        action="https://api.web3forms.com/submit"
+                        method="POST">
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="20d683da-e0f4-46ed-be71-2f2fc117a186" />
                         <div
                             class="d-flex align-items-center justify-content-center">
                             <div class="mb-3 w-50 ms-2" data-aos="fade-left">
@@ -470,6 +482,7 @@
                                     type="text"
                                     class="form-control"
                                     id="name"
+                                    name="الاسم"
                                     placeholder="أدخل إسمك " />
                             </div>
                             <div class="mb-3 w-50" data-aos="fade-right">
@@ -485,6 +498,7 @@
                                     type="text"
                                     class="form-control"
                                     id="tel"
+                                    name="رقم الهاتف"
                                     placeholder="أدخل رقم الهاتف" />
                             </div>
                         </div>
@@ -503,6 +517,7 @@
                                 type="text"
                                 class="form-control"
                                 id="name"
+                                name=" موقع البيت"
                                 placeholder="أدخل موقع البيت " />
                         </div>
                         <div class="mb-3 ms-2" data-aos="fade-right">
@@ -520,6 +535,7 @@
                                 type="text"
                                 class="form-control"
                                 id="name"
+                                name="في اي مرحلة البيت"
                                 placeholder="أدخل  المرحلة " />
                         </div>
                         <div class="mb-3" data-aos="fade-up">
@@ -537,6 +553,7 @@
                                 class="form-control"
                                 placeholder="أكتب العرض"
                                 id="letter"
+                                name="العرض"
                                 rows="4"></textarea>
                         </div>
                         <div class="text-center">
@@ -556,4 +573,5 @@
     <script src="libs/aos.js"></script>
     <script src="libs/bootstrap.js"></script>
     <script src="assets/script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </html>
